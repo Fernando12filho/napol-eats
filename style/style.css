@@ -1,0 +1,27 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 41px 212px;
+    max-width: 1450px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;   
+}
+img{
+    max-width: 100%;
+    object-fit:fill;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.hero-image{
+    border-radius: 81px;
+    max-width: 579px;
+    max-height: 475px;
+}
