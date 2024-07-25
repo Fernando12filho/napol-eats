@@ -12,18 +12,36 @@ body {
 }
 /*730px por 510px hero image*/
 
-
+/*Header logo 270px 110px*/
+.logo{
+    width: 270;
+    height: 110px;
+}
 nav ul{
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
+}
+
+.order-now{
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul li a{
     text-decoration: none;
+    margin: 1vw;
+    color: white;
 }
+
 img{
     max-width: 100%;
     object-fit:fill;
+}
+
+#hero-image{
+    display: block;
+    width: 600px;
 }
 
 .container{
@@ -33,10 +51,6 @@ img{
     justify-content:space-between;
 }
 
-.container div{
-    padding: 10px;
-    width: 40%;
-}
 .hero-image{
     border-radius: 81px;
     max-width: max-content;
@@ -52,12 +66,30 @@ button{
     border-style: none;
 }
 
+.hero-text{
+    margin: 60px 60px 60px 0;
+}
 
 .hero-buttons{
     padding: 0;
+    width: 100%;
     display: flex;
+    justify-content: flex-start;
 }
 
 .hero-buttons button{
     margin-right: 10px;
+}
+
+#menu-container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.menu-cards{
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    width: 100%;
 }
