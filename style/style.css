@@ -1,14 +1,30 @@
+@font-face {
+    font-family: 'Regular';
+    src: url(/style/fonts/Fira_Sans_Condensed//FiraSansCondensed-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url(/style/fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf);
+}
+
 /* Base Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Regular';
+    font-size: 18px;
     margin: 0;
     padding: 41px 15vw;
     max-width: 1450px;
+    min-width: 354px;
     margin: 0 auto;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;   
+}
+
+h1, h2{
+    font-size: 56px;
 }
 /*730px por 510px hero image*/
 
@@ -17,7 +33,10 @@ p{
 }
 
 .container{
-    margin-bottom: 80px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 /*Header logo 270px 110px*/
@@ -54,13 +73,14 @@ img{
 
 #hero{
     width: 100%;
-    height: 462px;
+    min-height: 462px;
     display: flex;
 }
 
 .hero-text{
     width: 50%;
     padding-right: 54px;
+    min-width: 354px;
 }
 
 .hero-image{
@@ -69,9 +89,8 @@ img{
 }
 
 #about{
-    height: 515px;
+    min-height: 515px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .about-image{
@@ -89,24 +108,19 @@ img{
 
 
 #events{
-    height: 518px;
+    min-height: 518px;
 }
 
 .events-text{
     width: 50%;
     padding-right: 54px;
+    min-width: 354px;
 }
 
 .events-image{
     width: 50%;
     padding-left: 54px;
-}
-
-.container{
-    width: 100%;
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
+    min-width: 354px;
 }
 
 .hero-image{
@@ -116,6 +130,7 @@ img{
 }
 
 button{ 
+    font-size: 16px;
     width: 200px;
     height: 40px;
     border-radius: 10px;
@@ -168,4 +183,54 @@ button{
     padding: 0;
     display: flex;
     justify-content: flex-start;
+}
+
+@media (max-width: 1000px) {
+    .hero-image img {
+        position: absolute;
+        top: 12vh;
+        left: 10vw;
+        width: 100%;
+        min-width: 390px;
+        height: 35%;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    #about-container{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .about-image{
+        margin-top: 30px;
+        width: 100%;
+        min-width: 354px;
+        padding-right: 0;
+    }
+    
+    .about-text{
+        width: 100%;
+        padding-left: 0;
+        min-width: 354px;
+    }
+
+    #events-container{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .events-text{
+        width: 100%;
+        padding-right: 0;
+        min-width: 354px;
+    }
+    
+    .events-image{
+        margin-top: 30px;
+        width: 100%;
+        padding-left: 0;
+        min-width: 354px;
+    }
+    
 }
