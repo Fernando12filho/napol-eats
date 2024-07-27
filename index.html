@@ -8,11 +8,11 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="logo">
+        <div class="container" id="header-container">
+            <div class="logo" id="header-logo">
                 <img src="/style/images/logoHeader.png" alt="Pizzeria Logo">
             </div>
-            <nav>
+            <nav id="nav-header-links">
                 <ul>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#events">Events</a></li>
@@ -23,9 +23,22 @@
             <div class="order-now">
                 <button>Order Now</button>
             </div>
+
+            <button id="menu-toggle" class="menu-toggle">
+                ☰
+            </button>
         </div>
     </header>
-
+    <nav id="mobile-nav" class="mobile-nav">
+        <ul>
+            <li id="closing-button"><a>X</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
     <!-- Hero Section -->
     <section id="hero">
         <div class="container" id="hero-text-buttons">
@@ -33,8 +46,8 @@
                 <h1>Experience Authentic Pizza Flavor</h1>
                 <p>Family-owned and passionately crafted, our pizzas bring the taste of tradition to every bite.</p>
                 <div class="hero-buttons">
-                    <button>Contact Us</button>
-                    <button>View Our Menu</button>
+                    <button id="contact-whatsapp">Contact Us</button>
+                    <button><a href="#menu">View Our Menu</a></button>
                 </div>
             </div>
             <div class="hero-image">
@@ -52,7 +65,7 @@
             <div class="about-text">
                 <h2>How We Began</h2>
                 <p>We are a family-owned pizzeria dedicated to bringing you the best in pizza. Our journey started with a passion for authentic flavors and a commitment to quality. We now bring our delicious pizzas to your events with our mobile food truck and offer vacuum-packed, pre-made pizzas for you to enjoy at home. Every bite carries the taste of tradition, thanks to our special oven that mimics the flavor of a wood-fired stove.</p>
-                <button>Explore Our Menu</button>
+                <button><a href="#menu">Explore Our Menu</a></button>
             </div>
         </div>
     </section>
@@ -62,10 +75,13 @@
         <div class="container" id="events-container">
             <div class="events-text">
                 <h2>How Our Events Work</h2>
+                <div class="events-image" id="events-image-mobile">
+                    <img src="/style/images/eventsImageDesktop.png" alt="Event Catering">
+                </div>
                 <p>Hosting an event? Our food truck is the perfect addition to any gathering, offering fresh, hot, and delicious pizzas on-site. We handle all the cooking, so you and your guests can enjoy a seamless and delightful experience. For those who prefer to enjoy our pizzas at home, we offer pre-made, vacuum-sealed pizzas that are easy to prepare and packed with flavor.</p>
                 <button id="contact-whatsapp">Contact Us on WhatsApp</button>
             </div>
-            <div class="events-image">
+            <div class="events-image" id="events-image-desktop">
                 <img src="/style/images/eventsImageDesktop.png" alt="Event Catering">
             </div>
         </div>
