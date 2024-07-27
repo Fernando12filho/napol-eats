@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const contactButton = document.getElementById("contact-whatsapp");
     const menuButton = document.getElementById("view-menu-whatsapp");
+    const eventsButton = document.getElementById("contact-whatsapp-events");
     const orderNowButton = document.getElementById("order-now");
     const orderNowMobileButton = document.getElementById("order-now-mobile");
 
@@ -8,8 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const whatsappNumber = "+1(321)3106114"; 
 
     // Messages to be sent
-    const contactMessage = "Hello, I would like to contact you.";
-    const menuMessage = "Hello, I would like to see the menu.";
     const orderNowMessage = "Hello, I would like to place an order.";
 
     function sendWhatsAppMessage(message) {
@@ -37,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (orderNowMobileButton) {
         orderNowMobileButton.addEventListener("click", function() {
+            sendWhatsAppMessage(orderNowMessage);
+        });
+    }
+
+    if (eventsButton) {
+        eventsButton.addEventListener("click", function() {
             sendWhatsAppMessage(orderNowMessage);
         });
     }
