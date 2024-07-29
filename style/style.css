@@ -236,9 +236,8 @@ button{
 
 @media (max-width: 1000px) {
     .logo {
-        content: url('/style/images/logoHeaderMobile.png');
-        width: 64px;
-        height: 61px;
+        width: 144px;
+        height: auto;
     }
     #header-container{
         align-items: center;
