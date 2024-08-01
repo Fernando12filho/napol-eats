@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const orderNowMobileButton = document.getElementById("order-now-mobile");
 
     // Replace with your company's WhatsApp number
-    const whatsappNumber = "+1(321)3106114"; 
+    const whatsappNumber = "+1(321)310-6114"; 
 
     // Messages to be sent
     const orderNowMessage = "Hello, I would like to place an order.";

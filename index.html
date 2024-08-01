@@ -3,8 +3,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NapolEats</title>
+    <link rel="icon" href="/style/images/napoleats.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/style/style.css">
 </head>
+<script>
+    // JavaScript function to open WhatsApp with a pre-filled message
+    function sendWhatsAppMessage() {
+        var phoneNumber = "+13213106114"; // Replace with your phone number
+        var message = "Hello! I would like to order a pizza."; // Replace with your desired message
+        var encodedMessage = encodeURIComponent(message);
+        var url = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+        window.location.href = url;
+    }
+</script>
 <body>
     <!-- Header -->
     <header>
@@ -17,14 +28,13 @@
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#events">Events</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="order-now">
-                <button id="order-now">Order Now</button>
+                <button onclick="sendWhatsAppMessage()"id="order-now">Order Now</button>
             </div>
 
-            <button id="menu-toggle" class="menu-toggle">
+            <button  onclick="sendsWhatsAppMessage()"id="menu-toggle" class="menu-toggle">
                 ☰
             </button>
         </div>
@@ -35,7 +45,7 @@
             <li><a href="#menu">Menu</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="sendWhatsAppMessage">Contact</a></li>
         </ul>
     </nav>
     
@@ -43,10 +53,10 @@
     <section id="hero">
         <div class="container" id="hero-text-buttons">
             <div class="hero-text">
-                <h1>Experience Authentic Pizza Flavor</h1>
-                <p>Family-owned and passionately crafted, our pizzas bring the taste of tradition to every bite.</p>
+                <h1>Welcome to NapolEats!</h1>
+                <p>Family-owned and passionately crafted, experience the authentic taste of our Neapolitan pizza.</p>
                 <div class="hero-buttons">
-                    <button id="contact-whatsapp">Contact Us</button>
+                    <button onclick="sendWhatsAppMessage()" id="contact-whatsapp">Contact Us</button>
                     <button><a href="#menu">View Our Menu</a></button>
                 </div>
             </div>
@@ -64,8 +74,8 @@
             </div>
             <div class="about-text">
                 <h2>How We Began</h2>
-                <p>We are a family-owned pizzeria dedicated to bringing you the best in pizza. Our journey started with a passion for authentic flavors and a commitment to quality. We now bring our delicious pizzas to your events with our mobile food truck and offer vacuum-packed, pre-made pizzas for you to enjoy at home. Every bite carries the taste of tradition, thanks to our special oven that mimics the flavor of a wood-fired stove.</p>
-                <button><a href="#menu">Explore Our Menu</a></button>
+                <p>We are a family-owned pizzeria dedicated to bringing you the best in pizza. Our journey started with a passion for Neapolitan pizza and a commitment to quality. We now bring our delicious pizzas to your events with our mobile food truck and offer vacuum-packed, pre-made pizzas for you to enjoy at home. Every bite carries the taste of tradition, thanks to our special oven that mimics the flavor of a wood-fired stove.</p>
+                <button onclick="sendsWhatsAppMessage()"><a href="#menu">Explore Our Menu</a></button>
             </div>
         </div>
     </section>
@@ -79,7 +89,7 @@
                     <img src="/style/images/eventsImageDesktop.png" alt="Event Catering">
                 </div>
                 <p>Hosting an event? Our food truck is the perfect addition to any gathering, offering fresh, hot, and delicious pizzas on-site. We handle all the cooking, so you and your guests can enjoy a seamless and delightful experience. For those who prefer to enjoy our pizzas at home, we offer pre-made, vacuum-sealed pizzas that are easy to prepare and packed with flavor.</p>
-                <button id="contact-whatsapp-events">Contact Us on WhatsApp</button>
+                <button onclick="sendWhatsAppMessage()" id="contact-whatsapp-events">Contact Us on WhatsApp</button>
             </div>
             <div class="events-image" id="events-image-desktop">
                 <img src="/style/images/eventsImageDesktop.png" alt="Event Catering">
@@ -125,16 +135,26 @@
                 <div class="menu-card">
                     <h3>Drinks</h3>
                     <ul>
-                        <li>Coke <span>$2.40</span></li>
-                        <li>Guarana <span>$2.40</span></li>
-                        <li>Water <span>$2.80</span></li>
-                        <li>Sparkling Water <span>$2.40</span></li>
-                        <li>Lemonade <span>$2.40</span></li>
+                        <li>Coke</li>
+                        <li>Guarana</li>
+                        <li>Water</li>
+                        <li>Sparkling Water</li>
+                        <li>Lemonade</li>
                     </ul>
                     <img src="/style/images/logoMenu.png" alt="Pizzeria Logo">
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="linear-gradient">
+        <div class="container" id="last-button-call">
+            
+        </div>
+        <div class="container-last-button-call">
+            <p>Discover our special Neapolitan flavor, crafted with tradition and passion.</p>
+            <button onclick=sendWhatsAppMessage()>Order Now</button>
+        </div>       
     </section>
 
     <!-- Footer -->
