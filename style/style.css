@@ -314,7 +314,7 @@ button {
   }
 
   #hero {
-    height: fit-content;
+    max-height: 300px;
   }
 
   .hero-text {
@@ -322,7 +322,7 @@ button {
   }
   .hero-image img {
     position: absolute;
-    top: 100px;
+    top: 225px;
     left: 7vw;
     width: 100%;
     min-width: 80%;
