@@ -51,8 +51,8 @@ p {
 
 /*Header logo 270px 110px*/
 .logo {
-  width: 270;
-  height: 110px;
+  width: 144px;
+  height: auto;
 }
 nav ul {
   display: flex;
@@ -313,16 +313,12 @@ button {
     padding: 16px;
   }
 
-  #hero {
-    max-height: 300px;
-  }
-
   .hero-text {
     padding: 0;
   }
   .hero-image img {
     position: absolute;
-    top: 225px;
+    top: 175px;
     left: 7vw;
     width: 100%;
     min-width: 80%;
