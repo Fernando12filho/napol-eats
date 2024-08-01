@@ -214,6 +214,10 @@ button {
   align-items: flex-start;
 }
 
+#menu-container h2{
+  margin-bottom: 20px;
+}
+
 .menu-cards {
   display: flex;
   flex-wrap: wrap;
