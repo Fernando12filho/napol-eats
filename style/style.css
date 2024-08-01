@@ -60,6 +60,16 @@ nav ul {
   justify-content: space-between;
 }
 
+#header-container{
+  position: relative;
+}
+
+#nav-header-links{
+  text-align: center;
+  position: absolute;
+  left: 40%;
+}
+
 .order-now {
   display: flex;
   justify-content: flex-end;
@@ -116,20 +126,38 @@ img {
 }
 
 #hero {
-  width: 100%;
+  position: relative;
   min-height: 462px;
   display: flex;
 }
 
 .hero-text {
-  width: 50%;
-  padding-right: 54px;
-  min-width: 354px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.hero-buttons {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
 }
 
 .hero-image {
-  width: 50%;
-  padding-left: 54px;
+  background: url("/style/images/hero\ background.jpg") center/cover no-repeat;
+  mask-image: linear-gradient(black, transparent);
+  height: 500px; /* Definir a altura */
+  width: 100%; /* Garantir que o container ocupe a largura total */
 }
 
 #about {
@@ -169,12 +197,6 @@ img {
   display: none;
 }
 
-.hero-image {
-  border-radius: 81px;
-  max-width: max-content;
-  min-width: 400px;
-}
-
 button {
   font-size: 16px;
   width: 200px;
@@ -184,17 +206,6 @@ button {
   background-color: #0a5a18;
   border-style: none;
   cursor: pointer;
-}
-
-.hero-buttons {
-  padding: 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.hero-buttons button {
-  margin-right: 10px;
 }
 
 #menu-container {
@@ -232,8 +243,16 @@ button {
   justify-content: flex-start;
 }
 
+#footer-container{
+  position: relative;
+}
+
+.footer-logo{
+  position: absolute;
+  left: 48%;
+}
+
 #linear-gradient {
-  
     width: 100%;
     position: relative;
     justify-content: center; /* Centralizar o conteúdo dentro da seção */
@@ -244,10 +263,6 @@ button {
   mask-image: linear-gradient(black, transparent);
   height: 500px; /* Definir a altura */
   width: 100%; /* Garantir que o container ocupe a largura total */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .container-last-button-call{
@@ -384,6 +399,10 @@ button {
   .footer-social {
     display: flex;
     flex-direction: column;
+  }
+
+  .footer-logo{
+    left: 43%;
   }
 
   h1 {
