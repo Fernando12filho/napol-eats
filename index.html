@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
         window.location.href = url;
     }
 
-    function sendWhatsAppEvents(){
+    function sendWhatsAppEvents() {
         var phoneNumber = "+13213106114";
         var message = "Hello! I would like to know more about how your events work.";
         var encodedMessage = encodeURIComponent(message);
@@ -24,6 +25,7 @@
         window.location.href = url;
     }
 </script>
+
 <body>
     <!-- Header -->
     <header>
@@ -39,10 +41,10 @@
                 </ul>
             </nav>
             <div class="order-now">
-                <button onclick="sendWhatsAppMessage()"id="order-now">Order Now</button>
+                <button onclick="sendWhatsAppMessage()" id="order-now">Order Now</button>
             </div>
 
-            <button  onclick="sendsWhatsAppMessage()"id="menu-toggle" class="menu-toggle">
+            <button onclick="sendsWhatsAppMessage()" id="menu-toggle" class="menu-toggle">
                 ☰
             </button>
         </div>
@@ -56,7 +58,7 @@
             <li><a href="#contact" onclick="sendWhatsAppMessage">Contact</a></li>
         </ul>
     </nav>
-    
+
     <!-- Hero Section -->
     <section id="hero">
         <div class="container" id="container-hero">
@@ -82,7 +84,11 @@
             </div>
             <div class="about-text">
                 <h2>How We Began</h2>
-                <p>We are a family-owned pizzeria dedicated to bringing you the best in pizza. Our journey started with a passion for Neapolitan pizza and a commitment to quality. We now bring our delicious pizzas to your events with our mobile food truck and offer vacuum-packed, pre-made pizzas for you to enjoy at home. Every bite carries the taste of tradition, thanks to our special oven that mimics the flavor of a wood-fired stove.</p>
+                <p>We are a family-owned pizzeria dedicated to bringing you the best in pizza. Our journey started with
+                    a passion for Neapolitan pizza and a commitment to quality. We now bring our delicious pizzas to
+                    your events with our mobile food truck and offer vacuum-packed, pre-made pizzas for you to enjoy at
+                    home. Every bite carries the taste of tradition, thanks to our special oven that mimics the flavor
+                    of a wood-fired stove.</p>
                 <button onclick="sendsWhatsAppMessage()"><a href="#menu">Explore Our Menu</a></button>
             </div>
         </div>
@@ -96,7 +102,10 @@
                 <div class="events-image" id="events-image-mobile">
                     <img src="/style/images/eventsImageDesktop.png" alt="Event Catering">
                 </div>
-                <p>Hosting an event? Our food truck is the perfect addition to any gathering, offering fresh, hot, and delicious pizzas on-site. We handle all the cooking, so you and your guests can enjoy a seamless and delightful experience. For those who prefer to enjoy our pizzas at home, we offer pre-made, vacuum-sealed pizzas that are easy to prepare and packed with flavor.</p>
+                <p>Hosting an event? Our food truck is the perfect addition to any gathering, offering fresh, hot, and
+                    delicious pizzas on-site. We handle all the cooking, so you and your guests can enjoy a seamless and
+                    delightful experience. For those who prefer to enjoy our pizzas at home, we offer pre-made,
+                    vacuum-sealed pizzas that are easy to prepare and packed with flavor.</p>
                 <button onclick="sendWhatsAppEvents()" id="contact-whatsapp-events">Contact Us on WhatsApp</button>
             </div>
             <div class="events-image" id="events-image-desktop">
@@ -107,7 +116,7 @@
 
     <!-- Menu Section -->
     <section id="menu">
-        <div class="container" id ="menu-container">
+        <div class="container" id="menu-container">
             <h2>Our Menu</h2>
             <div class="menu-cards">
                 <div class="menu-card">
@@ -157,12 +166,12 @@
 
     <section id="linear-gradient">
         <div class="container" id="last-button-call">
-            
+
         </div>
         <div class="container-last-button-call">
             <p>Discover our special Neapolitan flavor, crafted with tradition and passion.</p>
             <button onclick=sendWhatsAppMessage()>Order Now</button>
-        </div>       
+        </div>
     </section>
 
     <!-- Footer -->
@@ -184,10 +193,12 @@
             <div class="footer-social">
                 <a href="#"><img src="/style/images/icons8-facebook-144.png" alt="Facebook" width="24px"></a>
                 <a href="#"><img src="/style/images/icons8-instagram-144.png" alt="Instagram" width="24px"></a>
-                <a href="https://wa.me/+13213106114?text=Hello%21%20I%20would%20like%20to%20order%20a%20pizza."><img src="/style/images/icons8-whatsapp-144.png" alt="Whatsapp" width="24px"></a>
+                <a href="https://wa.me/+13213106114?text=Hello%21%20I%20would%20like%20to%20order%20a%20pizza."><img
+                        src="/style/images/icons8-whatsapp-144.png" alt="Whatsapp" width="24px"></a>
             </div>
         </div>
     </footer>
 </body>
 <script type="text/javascript" src="/main.js"></script>
+
 </html>
