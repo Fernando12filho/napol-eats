@@ -60,11 +60,11 @@ nav ul {
   justify-content: space-between;
 }
 
-#header-container{
+#header-container {
   position: relative;
 }
 
-#nav-header-links{
+#nav-header-links {
   text-align: center;
   position: absolute;
   left: 40%;
@@ -126,7 +126,7 @@ img {
 }
 
 #hero {
-  position: relative;
+  /*position: relative;*/
   min-height: 462px;
   display: flex;
 }
@@ -134,13 +134,12 @@ img {
 .hero-text {
   text-align: center;
   width: 100%;
-  position: absolute;
+  /*position: absolute;*/
   top: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 .hero-buttons {
   padding: 0;
@@ -154,10 +153,14 @@ img {
 }
 
 .hero-image {
-  background: url("/style/images/hero\ background.jpg") center/cover no-repeat;
-  mask-image: linear-gradient(black, transparent);
-  height: 500px; /* Definir a altura */
+  /*background: url("/style/images/hero\ background.jpg") center/cover no-repeat;
+  mask-image: linear-gradient(black, transparent);*/
   width: 100%; /* Garantir que o container ocupe a largura total */
+}
+
+.hero-image img {
+  min-width: 100%;
+  max-width: 579px;
 }
 
 #about {
@@ -214,7 +217,7 @@ button {
   align-items: flex-start;
 }
 
-#menu-container h2{
+#menu-container h2 {
   margin-bottom: 20px;
 }
 
@@ -247,19 +250,19 @@ button {
   justify-content: flex-start;
 }
 
-#footer-container{
+#footer-container {
   position: relative;
 }
 
-.footer-logo{
+.footer-logo {
   position: absolute;
   left: 48%;
 }
 
 #linear-gradient {
-    width: 100%;
-    position: relative;
-    justify-content: center; /* Centralizar o conteúdo dentro da seção */
+  width: 100%;
+  position: relative;
+  justify-content: center; /* Centralizar o conteúdo dentro da seção */
 }
 
 #last-button-call {
@@ -269,7 +272,7 @@ button {
   width: 100%; /* Garantir que o container ocupe a largura total */
 }
 
-.container-last-button-call{
+.container-last-button-call {
   width: 100%;
   position: absolute;
   bottom: 40%;
@@ -278,7 +281,7 @@ button {
   align-items: center;
 }
 
-.container-last-button-call p{
+.container-last-button-call p {
   text-align: center;
 }
 
@@ -332,16 +335,19 @@ button {
     padding: 16px;
   }
 
+  #container-hero{
+    position: relative;
+  }
+
   .hero-text {
     padding: 0;
   }
-  .hero-image img {
+
+  .hero-image {
     position: absolute;
-    top: 175px;
-    left: 7vw;
-    width: 100%;
-    min-width: 80%;
-    height: 35%;
+    top: -10%;
+    left: -20%;
+    width: 354px;
     opacity: 0.5;
     z-index: -1;
   }
@@ -405,7 +411,7 @@ button {
     flex-direction: column;
   }
 
-  .footer-logo{
+  .footer-logo {
     left: 43%;
   }
 
